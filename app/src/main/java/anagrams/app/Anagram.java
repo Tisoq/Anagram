@@ -1,8 +1,6 @@
 package anagrams.app;
 
-
 class Anagram {
-
 
     static String build(String input, String filter) {
 
@@ -22,7 +20,6 @@ class Anagram {
                     leftPointer += 1;
                     continue;
                 }
-
                 if (filter.indexOf(wordCharArray[rightPointer]) > -1) {
                     rightPointer -= 1;
                     continue;
@@ -31,7 +28,6 @@ class Anagram {
                 char tmp = wordCharArray[leftPointer];
                 wordCharArray[leftPointer] = wordCharArray[rightPointer];
                 wordCharArray[rightPointer] = tmp;
-
                 leftPointer += 1;
                 rightPointer -= 1;
             }
@@ -39,5 +35,4 @@ class Anagram {
         }
         return res.toString();
     }
-
 }

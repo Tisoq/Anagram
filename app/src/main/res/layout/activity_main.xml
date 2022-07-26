@@ -10,7 +10,7 @@
 
 
     <EditText
-        android:id="@+id/anInput"
+        android:id="@+id/Input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -26,14 +26,14 @@
         android:minHeight="50dp"
         android:textColor="@color/black"
         android:textColorHint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/anFilter"
+        app:layout_constraintBottom_toTopOf="@+id/Filter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
-        android:id="@+id/anFilter"
+        android:id="@+id/Filter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -48,14 +48,14 @@
         android:minHeight="50dp"
         android:textColor="@color/black"
         android:textColorHint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/anResult"
+        app:layout_constraintBottom_toTopOf="@+id/Result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/anInput" />
+        app:layout_constraintTop_toBottomOf="@+id/Input" />
 
 
     <TextView
-        android:id="@+id/anResult"
+        android:id="@+id/Result"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -69,6 +69,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/anFilter" />
+        app:layout_constraintTop_toBottomOf="@+id/Filter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

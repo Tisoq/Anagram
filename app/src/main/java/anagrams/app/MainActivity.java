@@ -10,19 +10,20 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements TextWatcher {
 
-    EditText anagramText, anagramFilter;
-    TextView anagramResult;
+    private EditText anagramInput;
+    private EditText anagramFilter;
+    private TextView anagramResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        anagramText = findViewById(R.id.anInput);
-        anagramFilter = findViewById(R.id.anFilter);
-        anagramResult = findViewById(R.id.anResult);
+        anagramInput = findViewById(R.id.Input);
+        anagramFilter = findViewById(R.id.Filter);
+        anagramResult = findViewById(R.id.Result);
 
-        anagramText.addTextChangedListener(this);
+        anagramInput.addTextChangedListener(this);
         anagramFilter.addTextChangedListener(this);
     }
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
 
     @Override
     public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-        String input = anagramText.getText().toString();
+        String input = anagramInput.getText().toString();
         String filter = anagramFilter.getText().toString();
 
         anagramResult.setText(Anagram.build(input, filter));
