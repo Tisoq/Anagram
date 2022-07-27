@@ -4,11 +4,11 @@ class Anagram {
 
     static String build(String input, String filter) {
 
-        StringBuilder res = new StringBuilder();
+        StringBuilder result = new StringBuilder();
 
-        String[] wordS = input.split("\\s");
+        String[] words = input.split("\\s");
 
-        for (String word : wordS) {
+        for (String word : words) {
 
             char[] wordCharArray = word.toCharArray();
             int leftPointer = 0;
@@ -31,8 +31,8 @@ class Anagram {
                 leftPointer += 1;
                 rightPointer -= 1;
             }
-            res.append(String.copyValueOf(wordCharArray)).append(" ");
+            result.append(String.copyValueOf(wordCharArray)).append(" ");
         }
-        return res.toString();
+        return result.toString();
     }
 }
