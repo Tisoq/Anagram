@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Anagrams</string>
+    <string name="anagram_text">Anagram text:</string>
+    <string name="anagram_filter">Anagram filter:</string>
+</resources>
