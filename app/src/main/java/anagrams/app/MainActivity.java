@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        anagramInput = findViewById(R.id.Input);
-        anagramFilter = findViewById(R.id.Filter);
-        anagramResult = findViewById(R.id.Result);
+        anagramInput = findViewById(R.id.input);
+        anagramFilter = findViewById(R.id.filter);
+        anagramResult = findViewById(R.id.result);
 
         anagramInput.addTextChangedListener(this);
         anagramFilter.addTextChangedListener(this);
